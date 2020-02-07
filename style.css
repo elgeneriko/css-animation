@@ -1,0 +1,72 @@
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+html {
+  font-family: 'Avenir Next', Open Sans, sans-serif;
+  line-height: 1.15;
+}
+.slider {
+  background-color: white;
+  margin: 2em auto;
+  max-width: 600px;
+  font-size: 12px;
+  opacity: 0;
+  -webkit-transform: translateY(8em) rotateZ(-0deg);
+          transform: translateY(8em) rotateZ(-0deg);
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  width: 90%;
+
+  will-change: transform, opacity;
+}
+
+.upper
+{
+ background-color: white;
+  margin: 2em auto;
+  max-width: 600px;
+  opacity: 0;
+  -webkit-transform: translateY(8em) rotateZ(-0deg);
+          transform: translateY(8em) rotateZ(-0deg);
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out;
+  transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  width: 90%;
+
+  will-change: transform, opacity;
+}
+.upper.is-visible
+{
+  opacity: 1;
+  -webkit-transform: rotateZ(-0deg);
+          transform: rotateZ(-0deg);
+}
+.slider.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateZ(-0deg);
+          transform: rotateZ(-0deg);
+}
+
